@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+}
+.container {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  margin: auto;
+  color: white;
+  border-radius: 25px;
+}
+.container h1 {
+  border-bottom: 2px solid rgb(146, 0, 0);
+  color: rgb(146, 0, 0);
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.list p {
+  cursor: pointer;
+  background-color: rgb(146, 0, 0);
+  padding: 10px;
+  border-radius: 25px;
+}
