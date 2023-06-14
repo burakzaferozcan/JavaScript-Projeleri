@@ -1,0 +1,104 @@
+/* CSS BASE */
+
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(58, 58, 58);
+  color: rgb(158, 158, 158);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.progress-container {
+  height: 0.4rem;
+  width: 60rem;
+  background-color: rgb(158, 158, 158);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  align-items: center;
+}
+.progress {
+  position: absolute;
+  background-color: blueviolet;
+  height: 0.4rem;
+  transition: ease 0.7s;
+}
+.circle {
+  z-index: 1;
+  background-color: rgb(58, 58, 58);
+  width: 3rem;
+  height: 3rem;
+  border: 0.4rem solid rgb(158, 158, 158);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.9s;
+}
+.circle.active {
+  border-color: blueviolet;
+  color: blueviolet;
+}
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.btn {
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: blueviolet;
+  color: white;
+}
+.btn:active {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.btn:disabled {
+  background-color: rgb(158, 158, 158);
+  cursor: not-allowed;
+}
