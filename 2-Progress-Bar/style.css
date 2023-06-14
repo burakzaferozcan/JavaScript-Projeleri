@@ -63,6 +63,7 @@ body {
   position: absolute;
   background-color: blueviolet;
   height: 0.4rem;
+  width:0%;
   transition: ease 0.7s;
 }
 .circle {
