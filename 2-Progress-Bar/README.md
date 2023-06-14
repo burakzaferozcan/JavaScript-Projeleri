@@ -1,4 +1,4 @@
 # Progress-Bar
  Javascript ile oluşturduğum basit bir animasyonlu ilerleme adımları uygulaması.
 
-Proje Linki : https://6489909d8fc614097b7efcfd--deft-creponne-a863e0.netlify.app/
+Proje Linki : https://648991cd947db006ce6a7f53--timely-lolly-e9148a.netlify.app/
