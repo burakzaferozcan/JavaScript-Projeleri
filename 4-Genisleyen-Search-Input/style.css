@@ -1,0 +1,80 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+
+body {
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+.form {
+  background-color: rgb(81, 141, 81);
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-left: 0.9rem;
+  transition: all ease 0.3s;
+}
+#searchButton {
+  cursor: pointer;
+}
+#searchInput {
+  opacity: 0;
+  width: 0.1rem;
+  background-color: rgb(81, 141, 81);
+  border: none;
+  transition: width 0.5s ease;
+}
+.form.active #searchInput {
+  opacity: 1;
+  width: 20rem;
+}
+.form.active {
+  width: 20rem;
+}
+#searchInput::placeholder {
+  color: white;
+}
