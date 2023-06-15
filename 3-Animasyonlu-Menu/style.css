@@ -1,0 +1,124 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 5rem;
+  transform-origin: left top;
+  transition: all ease-in-out 0.7s;
+}
+.container.show-nav{
+    transform: rotate(-20deg)
+}
+.circle {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  transform: rotate(35deg);
+  top: -9rem;
+  left: -10rem;
+  transition: all ease-in-out 0.7s;
+}
+.container.show-nav .circle{
+    transform: rotate(-120deg);
+}
+.circle button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.fas{
+transform: rotate(-35deg);
+}
+.circle button i {
+  font-size: 2.6rem;
+  color: white;
+}
+.content{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.content h1{
+    font-size: 3rem;
+}
+.content p{
+    font-size: 1.6rem;
+
+}
+.content h3{
+    font-size: 2rem;
+}
+.content img{
+    max-width: 100%;
+}
+nav{
+    position: absolute;
+    top: 50rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+    transform: translateX(-25rem);
+    transition: all ease-in-out 0.7s;
+}
+.container.show-nav +nav ul{
+    transform: translateX(1rem);
+}
+.container.show-nav + nav ul li:nth-child(2){
+    transform: translateX(4rem);
+}
+.container.show-nav + nav ul li:nth-child(3){
+    transform: translateX(8rem);
+}
+
+
