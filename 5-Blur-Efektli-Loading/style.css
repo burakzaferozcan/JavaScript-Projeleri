@@ -1,0 +1,52 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+.bg {
+  background: url(image/cita.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(0rem);
+}
+.bg-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  z-index: 1;
+  font-size: 9rem;
+  left: 50%;
+  top: 50%;
+  color: rgb(146, 0, 0);
+  transform: translate(-50%, -50%);
+}
