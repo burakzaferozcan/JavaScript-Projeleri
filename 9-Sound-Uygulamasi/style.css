@@ -1,0 +1,66 @@
+/* CSS BASE */
+:root {
+    --base-font-size: 62.5%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  input:focus {
+    outline:none !important}
+  html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+  }
+  ::-webkit-scrollbar {
+    display: auto;
+    width: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 0rem;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* CSS BASE */
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(black,rebeccapurple);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .container button{
+    width: 10rem;
+    height: 4rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .btn:hover{
+    background-color: rgba(255, 255, 255, 0.678);
+    color: rgb(170, 84, 255);
+    border-color: rgb(170, 84, 255);
+  }
+  .btn:active{
+    transform: scale(0.95);
+  }
