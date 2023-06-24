@@ -1,0 +1,91 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+  height: 100vh;
+  background-color: rgb(102, 102, 102);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  flex-wrap: wrap;
+}
+.event-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 2rem 0;
+}
+.event-wrapper p {
+  font-size: 1.9rem;
+}
+.event-wrapper span{
+    background-color: rgb(201, 201, 201);
+    color: black;
+    font-size: 2.5rem;
+    min-width: 15rem;
+    padding: 1rem;
+    height: 10rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+.text span{
+    background-color: rgb(201, 201, 201);
+    color: black;
+    font-size: 2.5rem;
+    min-width: 15rem;
+    padding: 1rem;
+    min-height: 10rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+}
+
+
