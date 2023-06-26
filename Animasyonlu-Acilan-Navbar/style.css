@@ -1,0 +1,106 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(82, 82, 82) 50%, rgb(48, 48, 48) 50%);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgb(82, 82, 82) 50%,
+    rgb(48, 48, 48) 50%
+  );
+  column-gap: 2rem;
+  width: 6rem;
+  transition: all linear 1s;
+}
+nav.active {
+  width: 35rem;
+}
+nav ul {
+  align-items: center;
+  column-gap: 2rem;
+  display: flex;
+  opacity: 0;
+  width: 0;
+  transition: all 1s linear;
+  position: sticky;
+}
+nav.active ul {
+  width: 27rem;
+  opacity: 1;
+}
+nav ul li {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+button {
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
+nav .line {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: white;
+  margin: 0.5rem 0;
+  transition: all linear 1s;
+}
+nav.active .line {
+  position: absolute;
+  margin: 0;
+
+}
+nav.active .line1 {
+  transform: rotate(-765deg);
+  top: 1rem;
+}
+nav.active .line2 {
+  transform: rotate(765deg);
+  top: 1rem;
+}
