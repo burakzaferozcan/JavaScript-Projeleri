@@ -1,0 +1,79 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+}
+.carousel {
+  border: none;
+  width: 60rem;
+  overflow: hidden;
+  border-radius: 5rem;
+  position: relative;
+}
+.image-wrapper {
+  display: flex;
+  transform: translateX(0);
+  transition: all ease-out 1s;
+}
+.button-wrapper button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 8rem;
+  cursor: pointer;
+  transform: translateY(150%);
+  opacity: 0;
+  top: 0;
+  transition: color ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+.button-wrapper button:hover {
+  color: rgba(0, 0, 0, 0.562);
+}
+.button-wrapper button:active {
+  transform: scale(0.95) translateY(150%);
+}
+.button-wrapper #next {
+  right: 2rem;
+}
+.button-wrapper #prev {
+  left: 2rem;
+}
+.carousel:hover .button-wrapper button {
+  opacity: 1;
+}
