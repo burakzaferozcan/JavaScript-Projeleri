@@ -1,0 +1,82 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100vh;
+  padding: 2rem;
+  background-color: rgb(41, 41, 41);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.1s;
+}
+button:active{
+    transform: scale(0.95);
+}
+.notification-container {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.notification {
+  color: white;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.notification.github {
+  background-color: black;
+}
+.notification.instagram {
+  background-color: purple;
+}
+.notification.twitter {
+  background-color: rgb(70, 70, 255);
+}
+.notification.youtube {
+  background-color: rgb(163, 0, 0);
+}
