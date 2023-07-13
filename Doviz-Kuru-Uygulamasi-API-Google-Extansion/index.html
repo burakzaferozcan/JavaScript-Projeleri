@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Döviz Kuru Uygulaması</title>
+</head>
+<body>
+    <!-- <div id="container">
+        <div id="main">
+            <h1>DÖVİZ KURU ÇEVİRİ</h1>
+        </div>
+        <div class="content-wrapper">
+            <input type="number" id="amount" placeholder="Miktar">
+            <div class="options-wrapper">
+            <select name="" class="selects" id="firstCurrencyOption">
+                <option selected>EUR</option>
+                <option>USD</option>
+                <option>JPY</option>
+                <option>TRY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+
+            <select  class="selects" id="secondCurrencyOption">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>JPY</option>
+                <option selected>TRY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+        </div>
+            <div id="result">Sonuç</div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Currency Conversion</h1>
+        <input type="number" placeholder="Amount" id="amount" >
+        <div class="select-wrapper">
+            <select id="firstCurrencyOption">
+                <option selected>EUR</option>
+                <option>USD</option>
+                <option>JPY</option>
+                <option>TRY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+            <select id="secondCurrencyOption">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>JPY</option>
+                <option selected>TRY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+        </div>
+        <div id="result">Result</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
