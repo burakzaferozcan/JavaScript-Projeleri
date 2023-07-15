@@ -1,0 +1,143 @@
+/* CSS BASE */
+
+:root {
+    --base-font-size: 62.5%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  input:focus {
+    outline:none !important}
+  html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+  }
+  ::-webkit-scrollbar {
+    /* display: auto;
+    width: 0; */
+    background-color: #87096B;
+    /* color: rgb(0, 0, 0); */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #4740CA;
+    border-radius: 1rem;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* CSS BASE */
+
+  body{
+    background-image: linear-gradient(90deg,#4740CA,#87096B);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI';
+  }
+  h1{
+    margin-top: 5rem;
+    font-size: 4rem;
+    color: white;
+  }
+  form{
+    margin-top: 5rem;
+    border: 0.2rem solid #87096B;
+    border-radius: 1rem;
+    height: 3.5rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    
+  }
+  form input{
+    color: white;
+    flex: 2;
+height: 100%;
+border: none;
+border-radius: 1rem 0 0 1rem;
+padding-left: 1rem;
+background-color: #87096B;
+
+  }
+  form input::placeholder{
+    color: rgb(255, 255, 255);
+  }
+  form button{
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    height: 100%;
+    border: none;
+    border-radius: 0 1rem 1rem 0 ;
+    background-color:#4740CA ;
+  }
+.pokemon-cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+  .pokemon-card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border-radius: 2rem;
+    row-gap: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    transition: all 1s;
+    background-color: white;
+  }
+  .pokemon-card.active{
+    transform: scale(1.1);
+  }
+
+  .pokemon-card img{
+    width: 80%;
+  }
+  .pokemon-card h2{
+    font-size: 1.8rem;
+  }
+  .pokemon-card p{
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+
+  @media (max-width:340px){
+    form{
+        width: 20rem;
+    }
+    form input{
+        width: 100%;
+    }
+    form button{
+        display: none;
+    }
+  }
+
+
+  @media (max-width:250px){
+    form{
+        width: 15rem;
+    }
+    .pokemon-card {
+        width: 15rem;
+        margin: 1.5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+
+  }
