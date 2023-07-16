@@ -1,0 +1,71 @@
+/* CSS BASE */
+
+:root {
+    --base-font-size: 62.5%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  input:focus {
+    outline:none !important}
+  html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+  }
+  ::-webkit-scrollbar {
+    display: auto;
+    width: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 0rem;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  /* CSS BASE */
+
+  body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI';
+  }
+  .time-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .time-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .time-container div span{
+    width: 18rem;
+    background-color: rgb(37, 37, 37);
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    font-size: 5rem;
+    border-radius: 1rem;
+    color: black;
+  }
+  .time-container div span:nth-child(1){
+    font-size: 14rem;
+  }
+  
+  
