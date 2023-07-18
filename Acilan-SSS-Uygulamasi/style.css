@@ -1,0 +1,83 @@
+/* CSS BASE */
+
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* CSS BASE */
+body {
+  display: flex;
+  justify-content: center;
+}
+.ask-container {
+  margin-top: 5rem;
+  width: 30vw;
+}
+.ask {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.ask-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.ask.active {
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1),0 3px 6px rgba(0,0,0,0.1);
+}
+.ask.active .ask-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+.ask.active .ask-header i {
+  transition: all 0.5s ease-in-out;
+}
+.ask p {
+  font-size: 1.6rem;
+  display: none;
+}
+.ask.active p {
+  margin-top: 1rem;
+  display: block;
+}
+.ask.active .ask-header i {
+  transform: rotate(540deg);
+}
+
