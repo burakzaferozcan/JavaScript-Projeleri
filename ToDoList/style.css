@@ -1,0 +1,161 @@
+:root {
+    --base-font-size: 62.5%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  input:focus {
+    outline: none !important;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+  }
+  ::-webkit-scrollbar {
+    display: auto;
+    width: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 0rem;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5rem;
+    text-align: center;
+    align-items: center;
+  }
+  .addTodoHeader h1 {
+    color: white;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .form {
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  #addTodoInput {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  #addTodoButton {
+    border-radius: 0 2.5rem 2.5rem 0;
+    width: 10rem;
+    border: none;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(141, 141, 141);
+    cursor: pointer;
+  }
+  #addTodoButton:hover {
+    background-color: rgba(124, 182, 124, 0.993);
+    color: white;
+  }
+  .addTodoFooter {
+    padding: 0 10%;
+  }
+  .addTodoFooter h1 {
+    color: white;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .inputDiv {
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 400px;
+  }
+
+  #searchTodoInput {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  #todoList {
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+  #todoList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(83, 83, 83);
+    column-gap: 1rem;
+  }
+  #todoListLi {
+    border-bottom: 1px solid rgb(83, 83, 83);
+    padding: 1rem;
+  }
+  #todoList li i {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  #todoList li i:hover {
+    color: rgb(168, 56, 56);
+  }
+  #clearTodoButton {
+    margin-top: 1rem;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(141, 141, 141);
+  }
+  #clearTodoButton:hover {
+    background-color: rgb(179, 42, 42);
+    color: white;
+  }
+
+  .todoMessage {
+    border-radius: 2.5rem;
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+    animation-name: animation1;
+    animation-duration: 1.5s;
+    position: fixed;
+    transform: translateY(-50px);
+
+    /* display: none; */
+  }
+  @keyframes animation1 {
+    to {
+      transform: translateY(50px);
+    }
+  }
